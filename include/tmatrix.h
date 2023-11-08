@@ -74,12 +74,12 @@ public:
     // индексация
     T& operator[](size_t ind)
     {
-        if (ind<0 || ind> sz) { throw - 1; }
+        if (ind<0 || ind>= sz) { throw - 1; }
         return pMem[ind];
     }
     const T& operator[](size_t ind) const
     {
-        if (ind<0 || ind> sz) { throw - 1; }
+        if (ind<0 || ind>= sz) { throw - 1; }
         return pMem[ind];
     }
     // индексация с контролем
